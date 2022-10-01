@@ -1,0 +1,36 @@
+import java.time.format.DateTimeFormatter
+import java.time.LocalDateTime
+
+// forとwhileの速度検証
+fun main(args: Array<String>) {
+    // 検証するループ数
+    val repeatCount = 1000000000
+    
+    // forの速度検証
+    val forBeforTime = LocalDateTime.now()
+    var forCount = 0
+    for(i in 1..repeatCount){forCount = forCount + i}
+    val forAfterTime = LocalDateTime.now()
+    
+    println(forCount)
+    println(forBeforTime)
+    println(forAfterTime)
+    
+    
+    println()
+    
+    
+    // whileの速度検証
+    val whileBeforTime = LocalDateTime.now()
+    var whileCount = 0
+    var j = 1
+    while(j <= repeatCount){
+        whileCount = whileCount + j
+        j++
+    }
+    val whileAfterTime = LocalDateTime.now()
+    
+    println(whileCount)
+    println(whileBeforTime)
+    println(whileAfterTime)
+}
