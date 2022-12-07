@@ -1,0 +1,85 @@
+// 1行読み込む
+val N = readLine()!!.toInt()
+
+
+// " "区切りで読み込み、リスト型として格納
+val list = readLine()!!.split(" ").map{it.toInt()}
+
+
+// " "区切りで読み込み、別々の変数に格納
+val (a,b) = readLine()!!.split(" ").map{it.toInt()}
+
+
+// リストの宣言(要素数指定)
+val x = MutableList() { 0 }
+
+
+// リストの宣言(Mutable)
+val x = mutableListOf<Int>()
+
+
+// 連想配列の宣言
+val mMap : MutableMap<String, String> = mutableMapOf()
+
+
+// 二次元配列の宣言(Int)
+val intArr = Array(){IntArray()}
+
+
+// 二次元配列の宣言(String)
+val strArr = Array() {arrayOfNulls<String>()}
+
+
+// 型確認
+val typeCheck = 2
+println(typeCheck.javaClass.kotlin)
+
+
+// 分割してArrayListに格納
+val result = text.chunked(1)
+
+
+// case文
+when (value) {
+    0 -> {}
+    1 -> {}
+    2 -> {}
+    else -> {}
+}
+
+
+// 二次元配列の中身確認
+arr.forEach{it1 ->
+	it1.forEach{it2 ->
+		print(it2)
+	}
+	println()
+}
+
+
+// バイナリ表現(2進数)を取得
+val binary = n.toString(2)
+
+
+// 乗算
+import kotlin.math.*
+val n = 0.0.pow()
+
+
+// 処理速度の計測
+val start = System.currentTimeMillis()
+	// 計測したい処理を記述
+val end = System.currentTimeMillis()
+println((end - start).toString() + "ms")
+
+
+// 再帰関数
+tailrec fun recursive(n: Int): Int {
+    return if (n < 0) {
+        n
+    } else {
+        recursive(n-1)
+    }
+}
+val num = 2
+recursive(num)
